@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .color1{
+background-color: rgb(255, 53, 53);
+color: white;
+}
+.color2{
+background-color: rgb(184, 0, 0);
+color: white;
+}
+.color3{
+background-color: rgb(255, 230, 0);
+color: black;
+}
+.color4{
+background-color: orange;
+color: black;
+}
+.color5{
+background-color: rgb(0, 179, 0);
+color: black;
+}
+.color6{
+background-color: green;
+color: white;
+}
+    </style>
+</head>
+<body class="p-3">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Covid 19 Tracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item a">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item b">
+                <a class="nav-link" href="/country-wise">Country-Wise</a>
+              </li>
+            </ul>
+            <i class="fa fa-align-right" aria-hidden="true">Made by Het Vaghasia</i>
+          </div>
+        </div>
+      </nav>
+      {% block content %}
+      {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

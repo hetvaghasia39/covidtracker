@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+        <br>
+        <h4 class="alert alert-light border rounded">World Data</h4>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="card col m-2 color1">
+                        <div class="card-body">
+                            <h4 class="card-title">New Confirmed</h4>
+                            <p class="card-text">{{summary.NewConfirmed}}</p>
+                        </div>
+                    </div>
+                    <div class="card col m-2 color3">
+                        <div class="card-body">
+                            <h4 class="card-title">New Deaths</h4>
+                            <p class="card-text">{{summary.NewDeaths}}</p>
+                        </div>
+                    </div>
+                    <div class="card col m-2 color5">
+                        <div class="card-body">
+                            <h4 class="card-title">New Recovered</h4>
+                            <p class="card-text">{{summary.NewRecovered}}</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="card col m-2 color2">
+                    <div class="card-body">
+                        <h4 class="card-title">Total Confirmed</h4>
+                        <p class="card-text">{{summary.TotalConfirmed}}</p>
+                    </div>
+                </div>
+                    <div class="card col m-2 color4">
+                        <div class="card-body">
+                            <h4 class="card-title">Total Deaths</h4>
+                            <p class="card-text">{{summary.TotalDeaths}}</p>
+                        </div>
+                    </div>
+                   
+                    <div class="card col m-2  color6">
+                        <div class="card-body">
+                            <h4 class="card-title">Total Recovered</h4>
+                            <p class="card-text">{{summary.TotalRecovered}}</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+{% endblock content %}
