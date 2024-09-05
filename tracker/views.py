@@ -9,7 +9,7 @@ def index(request):
     summary = None
     while(data):
         try: 
-            result = requests.get('http://api.covid19api.com/summary')
+            result = requests.get('http://api.covid19api.com/summary', timeout=60)
             json = result.json()
             summary = json['Global']
             countries = json['Countries']
@@ -23,7 +23,7 @@ def country(request):
     result = None
     while(data):
         try: 
-            result = requests.get('http://api.covid19api.com/summary')
+            result = requests.get('http://api.covid19api.com/summary', timeout=60)
             json = result.json()
             countries = json['Countries']
             data = False
